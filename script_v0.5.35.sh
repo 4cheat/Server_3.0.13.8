@@ -7,7 +7,7 @@ timeout="5"                                                 #Timeout for update 
 COLOR1='\033[0;32m'                                         #green color
 COLOR2='\033[0;31m'                                         #red color
 NC='\033[0m'                                                #no color
-check_for_updates="1"                                       #put 1=YES or 0=NO to check for updates
+check_for_updates="0"                                       #put 1=YES or 0=NO to check for updates
 #Don't change the variables below to make sure the script runs without problems!
 scriptversion="0535"                                        #scriptversion
 tsversion="3.0.13.8"                                        #version of teamspeak server
