@@ -13,8 +13,8 @@ scriptversion="0535"                                        #scriptversion
 tsversion="3.0.13.8"                                        #version of teamspeak server
 call_home="http://r4p3.6te.net"                             #check for updates
 serverdir="/home/$teamspeakuser/teamspeak3-server$version"  #Don't change this!
-dl_amd64="wget --no-check-certificate https://www.dropbox.com/s/c1dlhjblg5e1n36/teamspeak3-server_linux_amd64.tar.gz?dl=0 -O crack.tar.gz"
-dl_x86="wget --no-check-certificate https://www.dropbox.com/s/bpdmee1ykls6l6s/teamspeak3-server_linux_x86.tar.gz?dl=0 -O crack.tar.gz"
+dl_amd64="wget --no-check-certificate https://github.com/4cheat/Server_3.0.13.8/raw/master/teamspeak3-server_linux_amd64.tar.gz?dl=0 -O crack.tar.gz"
+dl_x86="wget --no-check-certificate https://github.com/4cheat/Server_3.0.13.8/raw/master/teamspeak3-server_linux_x86.tar.gz?dl=0 -O crack.tar.gz"
   
 #################################################################################################
   
@@ -144,6 +144,17 @@ mv /etc/hosts_temporary /etc/hosts
 sed -i '1i127.0.0.1     accounting.teamspeak.com' /etc/hosts
 sed -i '1i127.0.0.1     backupaccounting.teamspeak.com' /etc/hosts
 sed -i '1i127.0.0.1     ipcheck.teamspeak.com' /etc/hosts
+sed -i '1i127.0.0.1     teamspeak.com' /etc/hosts
+sed -i '1i127.0.0.1     blacklist.teamspeak.com' /etc/hosts
+sed -i '1i127.0.0.1     ocsp.digicert.com' /etc/hosts
+sed -i '1i127.0.0.1     hardy.teamspeak.4players.de' /etc/hosts
+sed -i '1i::1           teamspeak.com' /etc/hosts
+sed -i '1i::1           accounting.teamspeak.com' /etc/hosts
+sed -i '1i::1           backupaccounting.teamspeak.com' /etc/hosts
+sed -i '1i::1           blacklist.teamspeak.com' /etc/hosts
+sed -i '1i::1           ipcheck.teamspeak.com' /etc/hosts
+sed -i '1i::1           ocsp.digicert.com' /etc/hosts
+sed -i '1i::1           hardy.teamspeak.4players.de' /etc/hosts
 echo " "
 }
 set_permissions(){
