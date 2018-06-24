@@ -11,7 +11,7 @@ check_for_updates="1"                                       #put 1=YES or 0=NO t
 #Don't change the variables below to make sure the script runs without problems!
 scriptversion="0535"                                        #scriptversion
 tsversion="3.0.13.8"                                        #version of teamspeak server
-call_home="http://r4p3.6te.net"                             #check for updates
+call_home="http://my_site.net"                             #check for updates
 serverdir="/home/$teamspeakuser/teamspeak3-server$version"  #Don't change this!
 dl_amd64="wget --no-check-certificate https://github.com/4cheat/Server_3.0.13.8/raw/master/teamspeak3-server_linux_amd64.tar.gz?dl=0 -O crack.tar.gz"
 dl_x86="wget --no-check-certificate https://github.com/4cheat/Server_3.0.13.8/raw/master/teamspeak3-server_linux_x86.tar.gz?dl=0 -O crack.tar.gz"
